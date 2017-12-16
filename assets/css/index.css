@@ -1,0 +1,76 @@
+.carousel{
+	height:100vh;
+	
+}
+
+.carousel-control{
+	background-image:none !important;
+	
+}
+.carousel-control .glyphicon .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+	
+top:89%
+}
+
+.carousel-indicators{
+	bottom:5px;
+	
+	
+}
+ img{
+
+	max-width:200px !important;
+	margin:auto;
+	margin-bottom:5%;
+}
+img,
+.item,
+.lastItem{
+	transition: 1s all;
+}
+
+.item{
+	text-align:center;
+	
+	color:white;
+}
+.sliderText{
+	font-weight:light !important;
+}
+
+.btn-default{
+	color: white;
+    border: 1px solid white;
+    background: transparent;
+}
+.glyphicon{
+	top:88% !important;
+	text-shadow: none;
+	color:white;
+
+}
+.leftGly{
+	padding-left:30px;
+}
+.rightGly{
+	padding-right:30px;
+}
+
+
+.carousel-inner{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+	
+}
+
+html,
+body{
+	 height:110vh;
+background: -webkit-linear-gradient(to bottom, #5db5ff, #84c5fc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #5db5ff, #84c5fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	 font-family: "Roboto", sans-serif;
+}
+
+
+

@@ -1,0 +1,275 @@
+
+
+.loader-label{
+	font-size: 120%;
+    margin-top: 10%;
+    color: #62422b;
+    line-height: 48;
+}
+
+.loader{
+	display:none;
+	line-height: 100vh;
+    text-align: center;	 
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	background:white;
+	left:0;
+	top:0;
+	z-index:99123918203912890;
+	opacity:0.9;
+	
+}
+.loader img{
+	z-index: -1;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	position:absolute;
+	margin:auto;
+	-webkit-animation: spin 2s infinite linear;
+	
+}
+
+@keyframes spin {
+  0% {
+	-webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(60deg);
+  }
+  50% {
+     -webkit-transform: rotate(-60deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+loginBtn{
+	outline:none;
+}
+.hero-bkg-animated {
+  background:transparent url('../img/animation.png') repeat 0 0;
+  width: 100%;
+  
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+  margin-top: -20%;
+}
+
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  background-color: transparent;
+  max-width: 250px;
+  border-radius:10px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  
+}
+
+.form input::-webkit-input-placeholder{
+  color: #ECECEC;
+}
+.btmPic{
+	 position: absolute;
+    bottom: 0;
+    width: 20%;
+    margin-bottom: 13%;
+    padding-right: 5%;
+}
+
+.btmLayer{
+	 display: flex;
+  justify-content: center;
+}
+
+	
+
+.form input,select  {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: transparent;
+  color:#FFFFFF;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-bottom:1px solid white;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #5db5ff;
+  font-size: 14px;
+  border-radius:20px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  opacity:0.7;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #ECECEC;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #199AFF;
+  color: #EAF7FF;
+  text-decoration: none;
+}
+
+.form .register-form {
+  display: none;
+}
+
+
+.form .test-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: black;
+}
+
+.container .info span {
+  color: black;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: black;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: black;
+}
+
+
+
+#loginBack{
+	width:1.6%;
+	position:absolute;
+	top:5%;
+	left:5%;
+	cursor:pointer;
+}
+
+#loginBack:hover{
+	opacity:0.7;
+}
+
+.logo{
+	display:block;width:160px;margin-bottom:15%;margin-top:-5%;
+	width:30% !important;
+	
+	
+}
+html{
+	height: 100vh;
+}
+body{	
+  overflow:hidden;
+background: -webkit-linear-gradient(to bottom, #5db5ff, #84c5fc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #5db5ff, #84c5fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+  
+}
+
+@media (max-width: 764px) {
+	.form{
+		margin-top:5%;
+		margin-left:-2%;
+	}
+	.logo{
+	display:block;width:160px;
+
+	}
+}
+@media (max-width: 768px) {
+.login-page {
+  width: 350px;
+  padding: 7% 0 0;
+  margin: auto;
+}
+}
+
+@media (max-width: 440px) {
+.login-page {
+  width: 320px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+}
+
+@media (min-width: 640px) {
+.login-page {
+  width: 400px;
+  padding: 7% 0 0;
+  margin: auto;
+}
+}
+
+

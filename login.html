@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Login page </title>
+	<link rel="stylesheet" href="assets/css/login.css"> 	
+</head>
+
+<body>
+
+<div class='loader'>
+	<img src='assets/img/shit.png'/>
+	<label class='loader-label'> Pooping ... </label>
+</div>
+
+<br><br><br><br>
+<center>
+	<div class="login-page">
+		  <div class="form">
+				<form action ="" method = "post" class="register-form" onsubmit="return check()">					
+					  <div id="test">
+						  <label style=' color:white; font-size:20px;'> Create Account </label>
+						  <br><br>
+						  <input type="text" placeholder="Username" name="username" required/>
+						  <input id="pass" type="password" placeholder="Password" name="password" required onkeyup="checkPass(); return false;"/>
+						  <input  id="confirmpass" type="password" placeholder="Confirm password" required  onkeyup="checkPass(); return false;"/>
+						  <input type="email" name="email" placeholder="Email address" required/>
+						  <button id='register' name="register">create</button>
+					  </div>
+					  <p class="message">Already registered? <a href="#">Sign In</a></p>
+				</form>
+			
+				
+				<form action ="" method = "post"  class="login-form">
+					   <center><img src = 'assets/img/logo.gif' class='logo' > </center>
+						<!--  <h1 style='color:#76b852; border-color:grey;margin:3%;'> i-PreDi </h1> -->
+					  <input type="text" name="username" class='username' placeholder="username"  required/>
+					  <input type="password" name="password"  class='pass' placeholder="password"  required/>
+					  <a href='#'><button class='loginBtn' type='button' name="login">login</button></a>
+					  <p class="message"><a href="homepage.html">Create an account</a></p>
+				</form>	
+							
+		  </div>
+		  
+	</div>
+	<div class="hero-bkg-animated">
+			</div>	
+</body>
+
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script src='https://unpkg.com/sweetalert2@7.1.0/dist/sweetalert2.all.js'></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+<script type="text/javascript" src="assets/js/firebase.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
+</html>
+
+
+
+
+
