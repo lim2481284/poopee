@@ -117,14 +117,18 @@ This form of poop often hurts the most when being passed since it is generally l
 				description = name + ` is the normal urine color of a healthy, well-hydrated body. This is what it should look like`;
 				suggestion =`Drink more water  , do more exercise and keep this healthy status`;
 			}
-			else {
-				rate ='3';
-				if(color=='orange')
-					rate='2';
-				else if (color =='red')
-					rate ='1'
-				description = name + ` is properly hydrated, but you can actually drink too much water, which will make your urine virtually colorless. Overhydration for long periods of time can lead to serious complications. We will get to that later.`;
-			}	suggestion =`Increase your water intake , do more exercise. Grab some sport drink that will rebalance your electrolytes and add sodium back into your system. Take extra precautions when working or training outside in hot weather or training in a facility without air conditioning`;
+			else 
+			{
+		
+					rate ='3';
+					if(color=='orange')
+						rate='2';
+					else if (color =='red')
+						rate ='1'
+					description = name + ` is properly hydrated, but you can actually drink too much water, which will make your urine virtually colorless. Overhydration for long periods of time can lead to serious complications. We will get to that later.`;
+					suggestion =`Increase your water intake , do more exercise. Grab some sport drink that will rebalance your electrolytes and add sodium back into your system. Take extra precautions when working or training outside in hot weather or training in a facility without air conditioning`;
+				
+			}	
 			
 		}
 		
