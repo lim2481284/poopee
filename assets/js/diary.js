@@ -27,37 +27,23 @@ $(document).ready(function() {
 		var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'line',
+    type: 'doughnut',
 
     // The data for our dataset
-    data: {
-        labels: ["January", "February", "March"],
-        datasets: [{
-            label: "My score",
-            backgroundColor: 'rgb(255, 255, 255)',
-            borderColor: 'rgb(51, 128, 255)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-		fill: false,
-		showLine:false,
-		scales: {
-    xAxes: [{
-                gridLines: {
-                    display:false
-                }
-            }],
-    yAxes: [{
-                gridLines: {
-                    display:false
-                }   
-            }]
-    }
-		
-	}
+   data: {
+    labels: ["Carbohydrate", "Fat", "Glucose", "Calories", "Water","Other"],
+    datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#3498db",
+        "#e74c3c",
+        "#9b59b6",
+        "#f1c40f",
+		"#95a5a6",
+      ],
+      data: [12, 19, 10, 17, 28,3]
+   }]
+   }
 });
 
 

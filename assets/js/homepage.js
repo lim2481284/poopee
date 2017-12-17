@@ -29,6 +29,26 @@ $(document).ready(function() {
 			var key = $(this).val();
 			var username = localStorage.getItem("username");
 			claimPoopPee(username, key);
+			var rate = $(this).parent().find('.ratecore').val();
+			var current = $('.scorePoint').html();
+			
+			var check  = $(this).parent().find('.check').val();
+			var c =''
+			if(check == 1)
+			{
+				 c =parseInt(current) - parseInt(rate);
+				  $(this).parent().find('.check').val(0);
+				
+				
+				
+			}else 
+			{
+				 c =parseInt(current) + parseInt(rate); 
+				 $(this).parent().find('.check').val(1);
+			}
+			$('.scorePoint').html(c);
+				
+			
 		});
 
 });

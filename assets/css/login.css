@@ -6,7 +6,14 @@
     color: #62422b;
     line-height: 48;
 }
-
+.slogon{
+	color:white;
+	
+	margin-top:-10%;
+	font-weight:lighter;
+	font-size:80%;
+	margin-bottom:15%;
+}
 .loader{
 	display:none;
 	line-height: 100vh;

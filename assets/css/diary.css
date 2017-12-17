@@ -237,7 +237,7 @@ h1 {
 	right:20px;
 }
 .open span{
-	background:white;
+	background:#329bff;
 	height: 3px;
     width: 24px;
 	
@@ -610,19 +610,35 @@ h4 {
        width: 90%;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
 height:280px;
 	
 }
+
+.desc{
+	color:gray;
+	line-height:normal;
+}
+
+.subMenuTop{
+	margin-top:15%;
+}
+
 .cover{
 	position:absolute;
 	top:0;
 	left:0;
-	width:100vw;
-	height:350px;
+	width:50vw;
+	height:auto;
 	background-size:contain;	
 	z-index:-1;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -24%);
 }
+.cover2{
+	margin-top:5%;
+}
+
 
 .star {
 	filter:brightness(120%);
@@ -650,10 +666,31 @@ height:280px;
     font-size:25px;
   }
 }
-
+.cover{
+		 -webkit-animation: g 5s infinite linear;
+}
 .face{
 	
 	 -webkit-animation: slowspin 5s infinite linear;
+}
+
+@keyframes g {
+  0% {
+	width:50vw;
+
+  }
+  25% {
+    width:56vw;
+  }
+  50% {
+       width:50vw;
+  }
+  75% {
+width:48vw;
+  }
+  100% {
+   width:50vw;
+  }
 }
 @keyframes slowspin {
   0% {
@@ -749,13 +786,36 @@ body.fade-out {
     float: left;
 	margin-bottom:30px;
 }
+
+.hero-bkg-animated {
+  background:transparent url('../img/fruit.png') repeat 0 0;
+  width: 100%;
+  
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+  margin-top: -20%;
+}
+
+@-webkit-keyframes grow {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
 .suggestionContent{
 	text-align:center;
 	color:gray;
 	padding-top:10%;
 	padding-bottom:20%;
 	padding: 20px;
-	margin-top: 15%;
 	margin-bottom: 20%;
 }
 .overall{
